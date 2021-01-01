@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/a9e144aebb.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script data-ad-client="ca-pub-7011162543844980" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>VIVO Y95</title>
+    <style>
+        .dropdown-toggle::after {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-primary font-weight-bold" href="/index.html">Reve Grand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#div_quiz">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#div_predict">Predict</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/mobiles/smartphones.html">Smartphones</a>
+                        <a class="dropdown-item" href="/mobiles/accessories.html">Accessories</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="notLogged" id="div_loggin_button" style="display: none;">
+                <!--Login Button-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login_page">LOG IN
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="login_page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Log In</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!--login form-->
+                                <div class="form-group">
+                                    <label for="login_email">Email address</label>
+                                    <input type="email" class="form-control" id="login_email"
+                                        aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">Enter Your Email Address</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login_password">Password</label>
+                                    <input type="password" class="form-control" id="login_password">
+                                </div>
+
+                                <input type="checkbox" aria-label="password check box"
+                                    onclick="nav_login_showPassword()">
+                                <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" onclick="nav_login()" class="btn btn-primary">LOG IN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--SignUP Button-->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signup_page">SIGN UP
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="signup_page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-danger" id="exampleModalLabel">SIGN UP</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--login form-->
+                            <div class="form-group">
+                                <label for="fname">Full Name</label>
+                                <input type="text" class="form-control" id="fname" aria-describedby="fnameHelp">
+                                <small id="fnameHelp" class="form-text text-muted">Enter Your Full Name</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="PNumber">Mobile Number</label>
+                                <input type="text" class="form-control" id="pNumber" aria-describedby="pNumberHelp">
+                                <small id="pNumberHelp" class="form-text text-muted">Enter Your Paytm Number</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="login_email">Email address</label>
+                                <input type="email" class="form-control" id="sign_email" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">Enter Your Email Address</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="sign_password">Password</label>
+                                <input type="password" class="form-control" id="sign_password">
+                            </div>
+
+                            <input type="checkbox" aria-label="password check box" onclick="nav_signUp_showPassword()">
+                            <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" onclick="nav_signUp()" class="btn btn-danger">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="div_user_profile" style="display: none;">
+                <button class="btn btn-light dropdown-toggle" type="button" id="profile_id" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/other/profile.html">Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item btn-danger" type="button" onclick="nav_logout()">Log Out</button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!--Blog Post-->
+    <div class="container-fluid  bg-dark p-1">
+        <h2 style="color: red;" class="ml-2">vivo Y95</h1>
+    </div>
+    <div class="container mt-2">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="img-thumbnail">
+                            <img src="/images/mobiles/vivo_y95.jpg" class="d-block w-100" alt="vivo Y95">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="row">Display:</th>
+                                    <td>6.22 inches</td>
+                                    <td>1520 x 720 pixels resolution</td>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Camera:</th>
+
+                                    <td>Rear Camera: 13+2MP</td>
+                                    <td>Front Camera: 20MP AI camera</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Feature:</th>
+                                    <td>4GB|64GB Storage</td>
+                                    <td>Processor: 1.95GHz Qualcomm Snapdragon 439 octa core </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Battery:</th>
+                                    <td>Capacity: 4030mAh</td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h1>Specifications</h1>
+            <p class="lead">
+            <ul>
+                <li>13MP+2MP dual rear camera with professional, face beauty, time-lapse, slow, panorama, PDAF, live
+                    photos, portrait mode, google lens, AI scene recognition, HDR, portrait mode, AR stickers | 20MP
+                    front facing camer</li>
+                <li>15.798 centimeters (6.22-inch) HD+ capacitive touchscreen with 1520 x 720 pixels resolution</li>
+                <li>Memory, Storage & SIM: 4GB RAM | 64GB storage expandable up to 256GB | Dual nano SIM with dual
+                    standby (4G+4G)</li>
+                <li>Android v8.1 Oreo based on Funtouch 4.5 operating system with 1.95GHz Qualcomm Snapdragon 439 octa
+                    core processor</li>
+                <li>4030mAH lithium-ion battery</li>
+                <li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories
+                    including batteries from the date of purchase</li>
+                <li>Box also includes: Earphone, Micro USB to USB Cable, USB Power Adapter, SIM Ejector Pin, Protective
+                    Case, Protective Film (1 applied) and User Manual</li>
+            </ul>
+            </p>
+            <h2>Price: 15,690.00</h2>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="https://amzn.to/2W5MUFn" target="_blank" role="button">Buy Now</a>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark ">
+
+        <div style="background-color:#135fd3;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h5 class="mb-0 text-light">Get connected with us on social networks!</h5>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://www.facebook.com/ReveGrandsystem" target="_blank">
+                            <i class="fa fa-facebook-f text-white mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="#">
+                            <i class="fa fa-twitter text-white mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic" href="#">
+                            <i class="fa fa-google-plus text-white mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic" href="#">
+                            <i class="fa fa-linkedin text-white mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/revegrandsystem" target="_blank">
+                            <i class="fa fa-instagram  text-white"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold text-white">Reve Grand</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">Here you can search out budgets Smartphones and mobile accessories.
+                        Predict or participate in Quiz and get a chance to win real cash prizes.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/mobiles/smartphones.html" class="text-white">Smartphones</a>
+                    </p>
+                    <p>
+                        <a href="/mobiles/accessories.html" class="text-white">Accessories</a>
+                    </p>
+                    <p>
+                        <a href="/index.html#div_quiz" class="text-white">Quiz</a>
+                    </p>
+                    <p>
+                        <a href="/index.html#div_predict" class="text-white">Predict</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/other/contact_us.html" class="text-white">Contact Us</a>
+                    </p>
+                    <p>
+                        <a href="/other/about_us.html" class="text-white">About Us</a>
+                    </p>
+                    <p>
+                        <a href="/other/privacy_policy.html" class="text-white">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a href="/other/terms_and_conditions.html" class="text-white">Terms & Conditions</a>
+                    </p>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Contact US</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">
+                        <i class="fa fa-home mr-2"></i>Reve Grand Systems Kanina Khas, Haryana 123027</p>
+                    <p class="text-white">
+                        <i class="fa fa-envelope mr-2"></i> revegrandsystems@gmail.com</p>
+                    <p class="text-white">
+                        <i class="fa fa-phone mr-2"></i> +91 7496065130, 7988075115</p>
+
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="container-fluid bg-secondary">
+            <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+                <a href="/index.html" class="text-dark">Reve Grand Systems</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--firebase initialization-->
+    <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="/javascript/main.js"></script>
+
+</body>
+
+</html>

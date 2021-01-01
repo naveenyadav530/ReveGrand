@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/a9e144aebb.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script data-ad-client="ca-pub-7011162543844980" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>Privacy Policy</title>
+    <style>
+        .dropdown-toggle::after {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-primary font-weight-bold" href="/index.html">Reve Grand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#div_quiz">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#div_predict">Predict</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/mobiles/smartphones.html">Smartphones</a>
+                        <a class="dropdown-item" href="/mobiles/accessories.html">Accessories</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="notLogged" id="div_loggin_button" style="display: none;">
+                <!--Login Button-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login_page">LOG IN
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="login_page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Log In</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!--login form-->
+                                <div class="form-group">
+                                    <label for="login_email">Email address</label>
+                                    <input type="email" class="form-control" id="login_email"
+                                        aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">Enter Your Email Address</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login_password">Password</label>
+                                    <input type="password" class="form-control" id="login_password">
+                                </div>
+
+                                <input type="checkbox" aria-label="password check box"
+                                    onclick="nav_login_showPassword()">
+                                <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" onclick="nav_login()" class="btn btn-primary">LOG IN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--SignUP Button-->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signup_page">SIGN UP
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="signup_page" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-danger" id="exampleModalLabel">SIGN UP</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--login form-->
+                            <div class="form-group">
+                                <label for="fname">Full Name</label>
+                                <input type="text" class="form-control" id="fname" aria-describedby="fnameHelp">
+                                <small id="fnameHelp" class="form-text text-muted">Enter Your Full Name</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="PNumber">Mobile Number</label>
+                                <input type="text" class="form-control" id="pNumber" aria-describedby="pNumberHelp">
+                                <small id="pNumberHelp" class="form-text text-muted">Enter Your Paytm Number</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="login_email">Email address</label>
+                                <input type="email" class="form-control" id="sign_email" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">Enter Your Email Address</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="sign_password">Password</label>
+                                <input type="password" class="form-control" id="sign_password">
+                            </div>
+
+                            <input type="checkbox" aria-label="password check box" onclick="nav_signUp_showPassword()">
+                            <label class="form-check-label" for="exampleCheck1">Show Password</label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" onclick="nav_signUp()" class="btn btn-danger">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="div_user_profile" style="display: none;">
+                <button class="btn btn-light dropdown-toggle" type="button" id="profile_id" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/other/profile.html">Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item btn-danger" type="button" onclick="nav_logout()">Log Out</button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--About Us Page-->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to our Privacy Policy</h1>
+            <h3>Your privacy is critically important to us.</h3>
+            Reve Grand is located at:<br />
+            <address>
+                Reve Grand Systems Kanina Khas, Haryana 123027<br /><br /> Email Us: <a
+                    href="mailto:revegrandsystems@gmail.com">revegrandsystems@gmail.com</a>
+            </address>
+
+            <p>It is Reve Grand's policy to respect your privacy regarding any information we may collect while
+                operating our website. This Privacy Policy applies to <a
+                    href="https://revegrand.in">https://revegrand.in</a> (hereinafter, "us", "we", or
+                "https://revegrand.in"). We respect your privacy and are committed to protecting personally identifiable
+                information you may provide us through the Website. We have adopted this privacy policy ("Privacy
+                Policy") to explain what information may be collected on our Website, how we use this information, and
+                under what circumstances we may disclose the information to third parties. This Privacy Policy applies
+                only to information we collect through the Website and does not apply to our collection of information
+                from other sources.</p>
+            <p>This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general
+                rules and policies governing your use of our Website. Depending on your activities when visiting our
+                Website, you may be required to agree to additional terms and conditions.</p>
+
+            <h2>Website Visitors</h2>
+            <p>Like most website operators, Reve Grand collects non-personally-identifying information of the sort that
+                web browsers and servers typically make available, such as the browser type, language preference,
+                referring site, and the date and time of each visitor request. Reve Grand's purpose in collecting
+                non-personally identifying information is to better understand how Reve Grand's visitors use its
+                website. From time to time, Reve Grand may release non-personally-identifying information in the
+                aggregate, e.g., by publishing a report on trends in the usage of its website.</p>
+            <p>Reve Grand also collects potentially personally-identifying information like Internet Protocol (IP)
+                addresses for logged in users and for users leaving comments on https://revegrand.in blog posts. Reve
+                Grand only discloses logged in user and commenter IP addresses under the same circumstances that it uses
+                and discloses personally-identifying information as described below.</p>
+
+            <h2>Gathering of Personally-Identifying Information</h2>
+            <p>Certain visitors to Reve Grand's websites choose to interact with Reve Grand in ways that require Reve
+                Grand to gather personally-identifying information. The amount and type of information that Reve Grand
+                gathers depends on the nature of the interaction. For example, we ask visitors who sign up for a blog at
+                https://revegrand.in to provide a username and email address.</p>
+
+            <h2>Security</h2>
+            <p>The security of your Personal Information is important to us, but remember that no method of transmission
+                over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially
+                acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
+
+            <h2>Advertisements</h2>
+            <p>Ads appearing on our website may be delivered to users by advertising partners, who may set cookies.
+                These cookies allow the ad server to recognize your computer each time they send you an online
+                advertisement to compile information about you or others who use your computer. This information allows
+                ad networks to, among other things, deliver targeted advertisements that they believe will be of most
+                interest to you. This Privacy Policy covers the use of cookies by Reve Grand and does not cover the use
+                of cookies by any advertisers.</p>
+
+
+            <h2>Links To External Sites</h2>
+            <p>Our Service may contain links to external sites that are not operated by us. If you click on a third
+                party link, you will be directed to that third party's site. We strongly advise you to review the
+                Privacy Policy and terms and conditions of every site you visit.</p>
+            <p>We have no control over, and assume no responsibility for the content, privacy policies or practices of
+                any third party sites, products or services.</p>
+
+
+            <h2>Protection of Certain Personally-Identifying Information</h2>
+            <p>Reve Grand discloses potentially personally-identifying and personally-identifying information only to
+                those of its employees, contractors and affiliated organizations that (i) need to know that information
+                in order to process it on Reve Grand's behalf or to provide services available at Reve Grand's website,
+                and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and
+                affiliated organizations may be located outside of your home country; by using Reve Grand's website, you
+                consent to the transfer of such information to them. Reve Grand will not rent or sell potentially
+                personally-identifying and personally-identifying information to anyone. Other than to its employees,
+                contractors and affiliated organizations, as described above, Reve Grand discloses potentially
+                personally-identifying and personally-identifying information only in response to a subpoena, court
+                order or other governmental request, or when Reve Grand believes in good faith that disclosure is
+                reasonably necessary to protect the property or rights of Reve Grand, third parties or the public at
+                large.</p>
+            <p>If you are a registered user of https://revegrand.in and have supplied your email address, Reve Grand may
+                occasionally send you an email to tell you about new features, solicit your feedback, or just keep you
+                up to date with what's going on with Reve Grand and our products. We primarily use our blog to
+                communicate this type of information, so we expect to keep this type of email to a minimum. If you send
+                us a request (for example via a support email or via one of our feedback mechanisms), we reserve the
+                right to publish it in order to help us clarify or respond to your request or to help us support other
+                users. Reve Grand takes all measures reasonably necessary to protect against the unauthorized access,
+                use, alteration or destruction of potentially personally-identifying and personally-identifying
+                information.</p>
+
+            <h2>Aggregated Statistics</h2>
+            <p>Reve Grand may collect statistics about the behavior of visitors to its website. Reve Grand may display
+                this information publicly or provide it to others. However, Reve Grand does not disclose your
+                personally-identifying information.</p>
+
+            <h2>Affiliate Disclosure</h2>
+            <p>This site uses affiliate links and does earn a commission from certain links. This does not affect your
+                purchases or the price you may pay.</p>
+
+            <h2>Cookies</h2>
+            <p>To enrich and perfect your online experience, Reve Grand uses "Cookies", similar technologies and
+                services provided by others to display personalized content, appropriate advertising and store your
+                preferences on your computer.</p>
+            <p>A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's
+                browser provides to the website each time the visitor returns. Reve Grand uses cookies to help Reve
+                Grand identify and track visitors, their usage of https://revegrand.in, and their website access
+                preferences. Reve Grand visitors who do not wish to have cookies placed on their computers should set
+                their browsers to refuse cookies before using Reve Grand's websites, with the drawback that certain
+                features of Reve Grand's websites may not function properly without the aid of cookies.</p>
+            <p>By continuing to navigate our website without changing your cookie settings, you hereby acknowledge and
+                agree to Reve Grand's use of cookies.</p>
+
+
+
+            <h2>Privacy Policy Changes</h2>
+            <p>Although most changes are likely to be minor, Reve Grand may change its Privacy Policy from time to time,
+                and in Reve Grand's sole discretion. Reve Grand encourages visitors to frequently check this page for
+                any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy
+                Policy will constitute your acceptance of such change.</p>
+            <p>If you
+                have any questions about this Privacy Policy, please contact us via <a
+                    href="mailto:revegrandsystems@gmail.com">email</a> or <a href="tel:7496065130">phone</a>.</p>
+
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark ">
+
+        <div style="background-color:#135fd3;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h5 class="mb-0 text-light">Get connected with us on social networks!</h5>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://www.facebook.com/ReveGrandsystem" target="_blank">
+                            <i class="fa fa-facebook-f text-white mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="#">
+                            <i class="fa fa-twitter text-white mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic" href="#">
+                            <i class="fa fa-google-plus text-white mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic" href="#">
+                            <i class="fa fa-linkedin text-white mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/revegrandsystem" target="_blank">
+                            <i class="fa fa-instagram  text-white"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold text-white">Reve Grand</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">Here you can search out budgets Smartphones and mobile accessories.
+                        Predict or participate in Quiz and get a chance to win real cash prizes.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/mobiles/smartphones.html" class="text-white">Smartphones</a>
+                    </p>
+                    <p>
+                        <a href="/mobiles/accessories.html" class="text-white">Accessories</a>
+                    </p>
+                    <p>
+                        <a href="/index.html#div_quiz" class="text-white">Quiz</a>
+                    </p>
+                    <p>
+                        <a href="/index.html#div_predict" class="text-white">Predict</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="/other/contact_us.html" class="text-white">Contact Us</a>
+                    </p>
+                    <p>
+                        <a href="/other/about_us.html" class="text-white">About Us</a>
+                    </p>
+                    <p>
+                        <a href="/other/privacy_policy.html" class="text-white">Privacy Policy</a>
+                    </p>
+                    <p>
+                        <a href="/other/terms_and_conditions.html" class="text-white">Terms & Conditions</a>
+                    </p>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-white">Contact US</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">
+                        <i class="fa fa-home mr-2"></i>Reve Grand Systems Kanina Khas, Haryana 123027</p>
+                    <p class="text-white">
+                        <i class="fa fa-envelope mr-2"></i> revegrandsystems@gmail.com</p>
+                    <p class="text-white">
+                        <i class="fa fa-phone mr-2"></i> +91 7496065130, 7988075115</p>
+
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="container-fluid bg-secondary">
+            <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+                <a href="/index.html" class="text-dark">Reve Grand Systems</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--firebase initialization-->
+    <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+
+    <script src="/javascript/main.js"></script>
+
+</body>
+
+</html>
